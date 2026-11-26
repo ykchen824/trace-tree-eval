@@ -12,6 +12,10 @@
 </p>
 
 <p>
+  <strong>简体中文</strong> | <a href="README_EN.md">English</a>
+</p>
+
+<p>
   <a href="#-核心功能">核心功能</a> ·
   <a href="#-实测效果">实测效果</a> ·
   <a href="#-快速开始">快速开始</a> ·
