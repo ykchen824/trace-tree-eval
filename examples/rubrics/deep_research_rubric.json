@@ -1,0 +1,44 @@
+[
+  {
+    "id": "mid_task_constraint",
+    "name": "中途新增约束遵守",
+    "question": "Did the agent strictly follow all mid-task requirement updates or constraints added by the user during the trajectory?",
+    "weight": 1.5,
+    "high_risk": true
+  },
+  {
+    "id": "factual_grounding",
+    "name": "证据依据一致性",
+    "question": "Are all key factual claims and tool recommendations grounded in observed search results without fabrication?",
+    "weight": 1.2,
+    "high_risk": true
+  },
+  {
+    "id": "no_contradiction",
+    "name": "跨步无自相矛盾",
+    "question": "Did the agent remain logically consistent across steps without recommending options contradicted by earlier observations?",
+    "weight": 1.3,
+    "high_risk": true
+  },
+  {
+    "id": "self_verification",
+    "name": "交付前自我核验",
+    "question": "Did the agent perform a verification or self-check step against user requirements before outputting the final answer?",
+    "weight": 1.0,
+    "high_risk": false
+  },
+  {
+    "id": "deliverable_complete",
+    "name": "交付物完整性",
+    "question": "Did the final output include every requested deliverable without omitting required tables or sections?",
+    "weight": 1.2,
+    "high_risk": false
+  },
+  {
+    "id": "loop_efficiency",
+    "name": "无过度死循环重试",
+    "question": "Did the agent avoid prolonged repetitive retry loops that waste execution budget without progress?",
+    "weight": 0.8,
+    "high_risk": false
+  }
+]
